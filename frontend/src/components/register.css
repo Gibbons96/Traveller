@@ -1,0 +1,88 @@
+.registerContainer {
+  width: 320px;
+  height: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registerCancel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ff5c5c;
+  font-size: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c63ff;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input:focus {
+  border-color: #6c63ff;
+}
+
+.registerBtn {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #6c63ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registerBtn:hover {
+  background-color: #574bff;
+}
+
+.success,
+.failure {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.success {
+  color: #28a745;
+}
+
+.failure {
+  color: #ff5c5c;
+}
